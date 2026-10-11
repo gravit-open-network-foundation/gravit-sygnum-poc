@@ -1,0 +1,58 @@
+[
+  {
+    "scenario": "Transfer, two independent operators",
+    "proposal_id": "mcp-001",
+    "to_signature": true,
+    "reason": "Verified Fact",
+    "decision_id": "5761a8dea6a0df07"
+  },
+  {
+    "scenario": "Counterparty is not a KYC-verified client",
+    "proposal_id": "mcp-002",
+    "to_signature": false,
+    "reason": "policy: to_client 'client-9999' is not a KYC-verified client",
+    "decision_id": null
+  },
+  {
+    "scenario": "High value, only two operators",
+    "proposal_id": "mcp-003",
+    "to_signature": false,
+    "reason": "needs 3 independent operators, has 2",
+    "decision_id": "ed4995e1267d462b"
+  },
+  {
+    "scenario": "High value, three independent operators",
+    "proposal_id": "mcp-004",
+    "to_signature": true,
+    "reason": "Verified Fact",
+    "decision_id": "c380ae9c23ddce10"
+  },
+  {
+    "scenario": "Attestation from a revoked key",
+    "proposal_id": "mcp-005",
+    "to_signature": false,
+    "reason": "verifier: DEGRADED (Probabilistic Assessment): CANON-SIG-011: signed evidence from independent operators does not converge; claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'",
+    "decision_id": "37475da1dd6593c3"
+  },
+  {
+    "scenario": "Agent proposes more than the client holds",
+    "proposal_id": "mcp-006",
+    "to_signature": false,
+    "reason": "policy: insufficient balance: client-0001 holds 1200 EQ-ACME",
+    "decision_id": null
+  },
+  {
+    "scenario": "Weak evidence aggregated (three low-confidence votes)",
+    "proposal_id": "mcp-007",
+    "to_signature": false,
+    "reason": "verifier: DEGRADED (Probabilistic Assessment): claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'",
+    "decision_id": "24a6c0444fcc7895"
+  },
+  {
+    "scenario": "Equity tokens, two independent operators",
+    "proposal_id": "mcp-008",
+    "to_signature": true,
+    "reason": "Verified Fact",
+    "decision_id": "758d7b231b764abf"
+  }
+]

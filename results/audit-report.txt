@@ -1,0 +1,71 @@
+Audit entry #0  2026-10-11T12:00:00Z
+  Proposal   mcp-001 by agent-wealth-07: 5000 dCHF client-0001 -> client-0002 (rebalancing to target allocation)
+  Outcome    VERIFIED - forwarded for human signature
+  Reason     Verified Fact
+  Operators  operator-A, operator-B
+  Decision   5761a8dea6a0df07  state Verified Fact
+  Proposal hash  ef13ddf6254328c5cda90030bd0432bc534c1fca507ccb3e69d7058f9298c0ce
+  Chain      prev 0000000000000000...  this 011916a2fab63a29...
+
+Audit entry #1  2026-10-11T12:00:00Z
+  Proposal   mcp-002 by agent-wealth-07: 5000 dCHF client-0001 -> client-9999 (rebalancing to target allocation)
+  Outcome    BLOCKED
+  Reason     policy: to_client 'client-9999' is not a KYC-verified client
+  Operators  -
+  Decision   -  state -
+  Proposal hash  79f492bb958f5bf52556ab838ff4c0ea5c6bf0d01129847ddfbfe7abb0d83773
+  Chain      prev 011916a2fab63a29...  this 9dacbaa4e3321125...
+
+Audit entry #2  2026-10-11T12:00:00Z
+  Proposal   mcp-003 by agent-wealth-07: 250000 CHFAU client-0001 -> client-0002 (rebalancing to target allocation)
+  Outcome    BLOCKED
+  Reason     needs 3 independent operators, has 2
+  Operators  operator-A, operator-B
+  Decision   ed4995e1267d462b  state Verified Fact
+  Proposal hash  5ef7f71d7fccaaad75a59bb9a3c79403c6915321ed23d94e54fab71776c17d81
+  Chain      prev 9dacbaa4e3321125...  this 8bd1cf84671c4b84...
+
+Audit entry #3  2026-10-11T12:00:00Z
+  Proposal   mcp-004 by agent-wealth-07: 250000 CHFAU client-0001 -> client-0002 (rebalancing to target allocation)
+  Outcome    VERIFIED - forwarded for human signature
+  Reason     Verified Fact
+  Operators  operator-A, operator-B, operator-C
+  Decision   c380ae9c23ddce10  state Verified Fact
+  Proposal hash  b9cd4cd7efffdbcf7ddfec36b93920b437702d06b2851abcf162895c602562bb
+  Chain      prev 8bd1cf84671c4b84...  this 9943da29f5427c1b...
+
+Audit entry #4  2026-10-11T12:00:00Z
+  Proposal   mcp-005 by agent-wealth-07: 5000 dCHF client-0001 -> client-0002 (rebalancing to target allocation)
+  Outcome    BLOCKED
+  Reason     verifier: DEGRADED (Probabilistic Assessment): CANON-SIG-011: signed evidence from independent operators does not converge; claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'
+  Operators  operator-A
+  Decision   37475da1dd6593c3  state Probabilistic Assessment
+  Proposal hash  99d56b1e76799f9e1cf5028a0a40ce970b0d5e703e719c416559873021dd9564
+  Chain      prev 9943da29f5427c1b...  this 3147077863177ad2...
+
+Audit entry #5  2026-10-11T12:00:00Z
+  Proposal   mcp-006 by agent-wealth-07: 2000 EQ-ACME client-0001 -> client-0002 (sell equity tokens)
+  Outcome    BLOCKED
+  Reason     policy: insufficient balance: client-0001 holds 1200 EQ-ACME
+  Operators  -
+  Decision   -  state -
+  Proposal hash  56abe5e0c302a6643a55b701113bc1e36ee137339e531a273fef954ece02a93f
+  Chain      prev 3147077863177ad2...  this 31c5247f1c7d15e1...
+
+Audit entry #6  2026-10-11T12:00:00Z
+  Proposal   mcp-007 by agent-wealth-07: 5000 dCHF client-0001 -> client-0002 (rebalancing to target allocation)
+  Outcome    BLOCKED
+  Reason     verifier: DEGRADED (Probabilistic Assessment): claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'
+  Operators  operator-A, operator-B, operator-C
+  Decision   24a6c0444fcc7895  state Probabilistic Assessment
+  Proposal hash  2ccf8939eb08f3849cc3ea2d44508ec139c37415e156aebd430bbf3308ed05e3
+  Chain      prev 31c5247f1c7d15e1...  this e17514c85cea0cd7...
+
+Audit entry #7  2026-10-11T12:00:00Z
+  Proposal   mcp-008 by agent-wealth-07: 300 EQ-ACME client-0001 -> client-0003 (gift of equity tokens)
+  Outcome    VERIFIED - forwarded for human signature
+  Reason     Verified Fact
+  Operators  operator-B, operator-C
+  Decision   758d7b231b764abf  state Verified Fact
+  Proposal hash  b7d570835e9748ba0b367df105a045d7559a6752d2402236ffe1601ce8fea9a2
+  Chain      prev e17514c85cea0cd7...  this d0a3c584471fa50f...
