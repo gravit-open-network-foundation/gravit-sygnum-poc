@@ -44,6 +44,7 @@ CI runs the tests and regenerates `results/` on every change; it fails if a sing
 
 - **Is:** a runnable demonstration; the verification is the real, tested Gravit Verifier.
 - **Is not:** connected to Sygnum. MCP proposals, client book and balances are simulated.
+- **Is not:** reviewed or endorsed by Sygnum. It was built by the Gravit Open Network Foundation from public information only.
 - **Keys:** `gravit_gate/testkeys.py` contains **test keys only**, derived from public seeds.
 - `docs/`, `bridge/`, `economics/` and `epistemic_core/` (C++ sketches) are earlier concept
   material; they are kept for the record but are not part of the running demo, and they have
