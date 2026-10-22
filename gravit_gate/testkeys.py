@@ -93,14 +93,16 @@ def attest(
     timestamp: str = TEST_EVALUATION_TIME,
     record_id: str = "",
     provenance: str = "",
+    result: bool | None = True,
 ) -> EvidenceRecord:
     """An independent verifier's signed attestation that `action_hash` is sound.
-    `signer` may also be an unregistered name (e.g. "ghost") to simulate a forgery."""
+    `signer` may also be an unregistered name (e.g. "ghost") to simulate a forgery.
+    `result` is the signed verdict (verifier >= 0.6.0): True supports, False contradicts, None supports nothing."""
     op = OPERATORS.get(signer, ("unregistered", False))[0]
     rec = EvidenceRecord(
         record_id=record_id or f"{signer}:{artifact_id}",
         theta=theta,
-        result=True,
+        result=result,
         verifier_id=signer,
         timestamp=timestamp,
         provenance=provenance or op,
