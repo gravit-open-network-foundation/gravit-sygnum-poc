@@ -4,7 +4,7 @@
     "proposal_id": "mcp-001",
     "to_signature": true,
     "reason": "Verified Fact",
-    "decision_id": "dd3249ad404b974d"
+    "decision_id": "19cad6dc1b0a36e7"
   },
   {
     "scenario": "Counterparty is not a KYC-verified client",
@@ -18,21 +18,21 @@
     "proposal_id": "mcp-003",
     "to_signature": false,
     "reason": "needs 3 independent operators, has 2",
-    "decision_id": "83458dde55a7f010"
+    "decision_id": "91df68154b603116"
   },
   {
     "scenario": "High value, three independent operators",
     "proposal_id": "mcp-004",
     "to_signature": true,
     "reason": "Verified Fact",
-    "decision_id": "f3c7406e0a4d790c"
+    "decision_id": "60754dda3ae3aef1"
   },
   {
     "scenario": "Attestation from a revoked key",
     "proposal_id": "mcp-005",
     "to_signature": false,
-    "reason": "verifier: DEGRADED (Probabilistic Assessment): CANON-SIG-011: signed evidence from independent operators does not converge; claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'",
-    "decision_id": "d1621c257811443f"
+    "reason": "verifier: DEGRADED (Probabilistic Assessment): claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'",
+    "decision_id": "f5cd19620d6ee2ca"
   },
   {
     "scenario": "Agent proposes more than the client holds",
@@ -46,13 +46,13 @@
     "proposal_id": "mcp-007",
     "to_signature": false,
     "reason": "verifier: DEGRADED (Probabilistic Assessment): claimed 'Verified Fact' not justified by evidence; capped at 'Probabilistic Assessment'",
-    "decision_id": "64456e963f94525b"
+    "decision_id": "b799a0b801b15228"
   },
   {
     "scenario": "Equity tokens, two independent operators",
     "proposal_id": "mcp-008",
     "to_signature": true,
     "reason": "Verified Fact",
-    "decision_id": "59f07e02eca85459"
+    "decision_id": "7e803847e60fab00"
   }
 ]
